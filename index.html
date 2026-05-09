@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Template</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            width: 1100px;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 25px 0;
+        }
+
+        .header-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 38px;
+            font-weight: 500;
+            color: #4fa3f7;
+        }
+
+        .nav {
+            display: flex;
+            gap: 35px;
+        }
+
+        .nav a {
+            font-size: 18px;
+            color: #999;
+        }
+
+        .hero {
+            padding: 0;
+            text-align: center;
+            position: relative;
+            background: #fff;
+        }
+
+        .hero-content img {
+            width: 100%;
+            height: auto;
+        }
+
+        .hero-content {
+            position: relative;
+        }
+
+        .hero h1 {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 58px;
+            font-weight: 500;
+            color: white;
+        }
+
+        .btn {
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: inline-block;
+            background: #ff4fa0;
+            color: white;
+            padding: 18px 45px;
+            border-radius: 40px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        section {
+            padding: 90px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 46px;
+            font-weight: 500;
+            margin-bottom: 70px;
+        }
+
+        .services {
+            background: #fafafa;
+        }
+
+        .services-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            text-align: center;
+        }
+
+        .service-item {
+            flex: 1;
+        }
+
+        .service-item i {
+            font-size: 52px;
+            color: #999;
+            margin-bottom: 25px;
+        }
+
+        .service-item p {
+            color: #9c9c9c;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .blog-post {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 45px;
+            align-items: center;
+        }
+
+        .blog-image {
+            width: 320px;
+            flex-shrink: 0;
+        }
+
+        .blog-content h3 {
+            font-size: 38px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        .date {
+            color: #aaa;
+            margin-bottom: 20px;
+            font-size: 15px;
+        }
+
+        .blog-content p {
+            color: #9c9c9c;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .about {
+            background: white;
+        }
+
+        .about-wrapper {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h3 {
+            font-size: 40px;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+
+        .about-text p {
+            font-size: 18px;
+            color: #8f8f8f;
+            line-height: 1.9;
+        }
+
+        .about-image {
+            flex: 1;
+        }
+
+        footer {
+            background: #374151;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        footer .logo {
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .footer-nav a {
+            color: #d6d6d6;
+            font-size: 18px;
+        }
+
+        .copyright {
+            color: #ddd;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-wrapper">
+        <div class="logo">Project Name</div>
+
+        <nav>
+            <ul class="nav">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <img src="img/jumbotron.jpg" alt="hero">
+
+        <h1>Landing Page Template</h1>
+        <a href="#" class="btn">Go back to the lesson</a>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <h2 class="section-title">Services</h2>
+
+        <div class="services-grid">
+            <div class="service-item">
+                <i class="fa-solid fa-gauge-high"></i>
+                <p>
+                    phoncus ut. imperdiet vel venenatis vitae justo
+                    ullam dictum felis eu pede mollis pretium massa.
+                </p>
+            </div>
+
+            <div class="service-item">
+                <i class="fa-regular fa-calendar"></i>
+                <p>
+                    phoncus ut. imperdiet vel venenatis vitae justo
+                    ullam dictum felis eu pede mollis pretium massa.
+                </p>
+            </div>
+
+            <div class="service-item">
+                <i class="fa-solid fa-chart-column"></i>
+                <p>
+                    phoncus ut. imperdiet vel venenatis vitae justo
+                    ullam dictum felis eu pede mollis pretium massa.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="blog">
+    <div class="container">
+        <h2 class="section-title">Blog</h2>
+
+        <div class="blog-post">
+            <div class="blog-image">
+                <img src="img/blog1.jpg" alt="blog">
+            </div>
+
+            <div class="blog-content">
+                <h3>Socis natoque magnis dis valem parturient...</h3>
+                <div class="date">01.01.2017</div>
+                <p>
+                    Lenean commodo ligula eget dolor, aenean massa.
+                    Cum sociis natoque penatibus et magnis dis parturient
+                    montes, nascetur ridiculus mus donec quam felis
+                    ultricies nec pellentesque eu.
+                </p>
+            </div>
+        </div>
+
+        <div class="blog-post">
+            <div class="blog-image">
+                <img src="img/blog2.jpg" alt="blog">
+            </div>
+
+            <div class="blog-content">
+                <h3>Socis natoque magnis dis valem parturient...</h3>
+                <div class="date">31.12.2016</div>
+                <p>
+                    Lenean commodo ligula eget dolor, aenean massa.
+                    Cum sociis natoque penatibus et magnis dis parturient
+                    montes, nascetur ridiculus mus donec quam felis
+                    ultricies nec pellentesque eu.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about">
+    <div class="container">
+        <h2 class="section-title">About Us</h2>
+
+        <div class="about-wrapper">
+            <div class="about-text">
+                <h3>Creative Design & Modern Style</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+                    Donec ullamcorper nulla non metus auctor fringilla.
+                    Vestibulum id ligula porta felis euismod semper.
+                </p>
+            </div>
+
+            <div class="about-image">
+                <img src="img/about.jpg" alt="about">
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="logo">Project Name</div>
+
+        <div class="footer-nav">
+            <a href="#">About</a>
+            <a href="#">Team</a>
+            <a href="#">News</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="copyright">
+            © 2017 All Rights Reserved
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
