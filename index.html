@@ -238,123 +238,134 @@
         }
     
 
-/* ============================= */
-/* Mobile First */
-/* ============================= */
+/* ===================================== */
+/* Адаптація під телефон (Mobile First) */
+/* ===================================== */
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
+@media screen and (max-width: 768px) {
 
-.container {
-    width: 90%;
-    margin: auto;
-}
-
-header {
-    text-align: center;
-    padding: 20px 0;
-}
-
-nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    list-style: none;
-}
-
-nav ul li a {
-    display: block;
-    text-decoration: none;
-    padding: 12px;
-    background: #f2f2f2;
-    border-radius: 8px;
-    color: #333;
-    font-weight: bold;
-}
-
-.hero {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.about,
-.services,
-.contact {
-    padding: 30px 20px;
-    text-align: center;
-}
-
-.cards {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.card {
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background: #fff;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-}
-
-/* ============================= */
-/* Планшети */
-/* ============================= */
-
-@media screen and (min-width: 768px) {
-
-    nav ul {
-        flex-direction: row;
-        justify-content: center;
+    .container {
+        width: 95%;
     }
 
-    .cards {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+    /* Header */
+
+    .header-wrapper {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
     }
 
-    .card {
-        width: 45%;
-    }
-}
-
-/* ============================= */
-/* Великі екрани */
-/* ============================= */
-
-@media screen and (min-width: 1024px) {
-
-    .hero {
-        padding: 80px 20px;
+    .logo {
+        font-size: 28px;
     }
 
-    .cards {
-        justify-content: space-between;
+    .nav {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
     }
 
-    .card {
-        width: 30%;
+    .nav li {
+        width: 100%;
     }
 
-    .about,
-    .services,
-    .contact {
-        text-align: left;
+    .nav a {
+        display: block;
+        background: #f2f2f2;
+        padding: 12px;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    /* Hero */
+
+    .hero h1 {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 28px;
+        width: 90%;
+    }
+
+    .btn {
+        top: 55%;
+        font-size: 14px;
+        padding: 12px 25px;
+        white-space: nowrap;
+    }
+
+    /* Sections */
+
+    section {
+        padding: 50px 0;
+    }
+
+    .section-title {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    /* Services */
+
+    .services-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .service-item i {
+        font-size: 40px;
+    }
+
+    .service-item p {
+        font-size: 16px;
+    }
+
+    /* Blog */
+
+    .blog-post {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .blog-image {
+        width: 100%;
+    }
+
+    .blog-content h3 {
+        font-size: 26px;
+    }
+
+    .blog-content p {
+        font-size: 16px;
+    }
+
+    /* About */
+
+    .about-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text h3 {
+        font-size: 28px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    /* Footer */
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    footer {
+        padding: 50px 0;
     }
 }
 
